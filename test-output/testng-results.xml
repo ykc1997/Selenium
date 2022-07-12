@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Launching Chrome..]]>
+    </line>
+    <line>
+      <![CDATA[Insert UserID and Password]]>
+    </line>
+    <line>
+      <![CDATA[Insert Pin]]>
+    </line>
+    <line>
+      <![CDATA[Welcome to Kite Zeroda..]]>
+    </line>
+    <line>
+      <![CDATA[Oopss.. TC is FAILED, TC name is : validadeUserID]]>
+    </line>
+    <line>
+      <![CDATA[Thank You For Visiting Us, You Are Logging Out..]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser..]]>
+    </line>
+    <line>
+      <![CDATA[Launching Firefox..]]>
+    </line>
+    <line>
+      <![CDATA[Insert UserID and Password]]>
+    </line>
+    <line>
+      <![CDATA[Insert Pin]]>
+    </line>
+    <line>
+      <![CDATA[Welcome to Kite Zeroda..]]>
+    </line>
+    <line>
+      <![CDATA[Oopss.. TC is FAILED, TC name is : validadeUserID]]>
+    </line>
+    <line>
+      <![CDATA[Thank You For Visiting Us, You Are Logging Out..]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser..]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-07-06T14:59:59 IST" name="Suite" finished-at="2022-07-06T15:00:42 IST" duration-ms="43692">
+    <groups>
+    </groups>
+    <test started-at="2022-07-06T14:59:59 IST" name="ChromeTest" finished-at="2022-07-06T15:00:24 IST" duration-ms="24928">
+      <class name="kiteTest.TestClass_for_CrossBrowser_with_Listener">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@18df8434]" started-at="2022-07-06T14:59:59 IST" name="openBrowser" finished-at="2022-07-06T15:00:15 IST" duration-ms="16437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launching Chrome..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToKiteApp()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@18df8434]" started-at="2022-07-06T15:00:15 IST" name="loginToKiteApp" finished-at="2022-07-06T15:00:17 IST" duration-ms="1761" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Insert UserID and Password]]>
+            </line>
+            <line>
+              <![CDATA[Insert Pin]]>
+            </line>
+            <line>
+              <![CDATA[Welcome to Kite Zeroda..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToKiteApp -->
+        <test-method signature="validadeUserID()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@18df8434]" started-at="2022-07-06T15:00:17 IST" name="validadeUserID" finished-at="2022-07-06T15:00:20 IST" duration-ms="2548" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at kiteTest.TestClass_for_CrossBrowser_with_Listener.validadeUserID(TestClass_for_CrossBrowser_with_Listener.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Oopss.. TC is FAILED, TC name is : validadeUserID]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validadeUserID -->
+        <test-method is-config="true" signature="logoutFromKiteApp()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@18df8434]" started-at="2022-07-06T15:00:20 IST" name="logoutFromKiteApp" finished-at="2022-07-06T15:00:23 IST" duration-ms="3559" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thank You For Visiting Us, You Are Logging Out..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutFromKiteApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@18df8434]" started-at="2022-07-06T15:00:23 IST" name="closeBrowser" finished-at="2022-07-06T15:00:24 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- kiteTest.TestClass_for_CrossBrowser_with_Listener -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2022-07-06T15:00:24 IST" name="FirefoxTest" finished-at="2022-07-06T15:00:42 IST" duration-ms="18648">
+      <class name="kiteTest.TestClass_for_CrossBrowser_with_Listener">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@25ce9dc4]" started-at="2022-07-06T15:00:24 IST" name="openBrowser" finished-at="2022-07-06T15:00:32 IST" duration-ms="8152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Launching Firefox..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToKiteApp()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@25ce9dc4]" started-at="2022-07-06T15:00:32 IST" name="loginToKiteApp" finished-at="2022-07-06T15:00:36 IST" duration-ms="4418" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Insert UserID and Password]]>
+            </line>
+            <line>
+              <![CDATA[Insert Pin]]>
+            </line>
+            <line>
+              <![CDATA[Welcome to Kite Zeroda..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToKiteApp -->
+        <test-method signature="validadeUserID()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@25ce9dc4]" started-at="2022-07-06T15:00:36 IST" name="validadeUserID" finished-at="2022-07-06T15:00:36 IST" duration-ms="82" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at kiteTest.TestClass_for_CrossBrowser_with_Listener.validadeUserID(TestClass_for_CrossBrowser_with_Listener.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Oopss.. TC is FAILED, TC name is : validadeUserID]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validadeUserID -->
+        <test-method is-config="true" signature="logoutFromKiteApp()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@25ce9dc4]" started-at="2022-07-06T15:00:37 IST" name="logoutFromKiteApp" finished-at="2022-07-06T15:00:40 IST" duration-ms="3764" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thank You For Visiting Us, You Are Logging Out..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoutFromKiteApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:kiteTest.TestClass_for_CrossBrowser_with_Listener@25ce9dc4]" started-at="2022-07-06T15:00:40 IST" name="closeBrowser" finished-at="2022-07-06T15:00:42 IST" duration-ms="1974" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- kiteTest.TestClass_for_CrossBrowser_with_Listener -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+name: Suite
+parallel: tests
+configFailurePolicy: skip
+tests:
+  - name: Test1
+  parallel: tests
+  parameters: { browserName: chrome }
+  classes:
+    - crossBrowserTesting.Compatibility
+
+  - name: Test2
+  parallel: tests
+  parameters: { browserName: firefox }
+  classes:
+    - crossBrowserTesting.Compatibility
+
